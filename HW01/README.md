@@ -1,3 +1,5 @@
+I'll create a comprehensive README based on your code and requirements.
+
 # Enhanced ResNeXt with Channel Attention for 100-Class Image Classification
 
 ## NYCU Computer Vision 2025 Spring HW1
@@ -9,13 +11,19 @@
 This project implements an enhanced image classification model for a 100-class classification challenge. The core approach uses ResNeXt101_32X8D as a backbone with added channel attention mechanisms to improve feature representation and address class imbalance.
 
 Key features:
-- Channel attention (Squeeze-and-Excitation) module for better feature discrimination
-- Custom dataset-specific normalization values
+- Channel attention (Squeeze-and-Excitation) module 
+- Custom dataset-specific normalization values 
 - CutMix data augmentation for regularization
 - Focal Loss with label smoothing to handle class imbalance
 - Test-Time Augmentation for robust inference
 
 ## How to install
+
+### Dependencies
+
+```bash
+pip install -r requirements.txt
+```
 
 ### Directory Structure
 
@@ -29,7 +37,7 @@ Key features:
 ├── inference.py    # Test prediction code
 ├── train.py        # Training and validation routines
 ├── utils.py        # Visualization and helper functions
-├── images/         # Results visualization
+├── requirements.txt # Project dependencies
 └── data/           # Dataset directory
     ├── train/      # Training images (100 classes)
     ├── val/        # Validation images
@@ -45,12 +53,14 @@ python main.py train --train_data_dir data/train --val_data_dir data/val --save_
 ```
 
 Additional training options:
-- `--num_epochs 30`: Set number of training epochs
-- `--batch_size 16`: Change batch size
-- `--learning_rate 5e-5`: Adjust learning rate
-- `--criterion cross_entropy`: Use Cross-Entropy loss instead of Focal Loss
-- `--nodropout`: Disable dropout
-- `--patience 7`: Adjust early stopping patience
+- `--num_epochs 20`: Set number of training epochs (default: 20)
+- `--batch_size 10`: Change batch size (default: 10)
+- `--learning_rate 1e-5`: Adjust learning rate (default: 1e-5)
+- `--criterion focal`: Select loss function, options: "focal" or "cross_entropy" (default: "focal")
+- `--nodropout`: Disable dropout (default: dropout enabled with p=0.5)
+- `--seed 42`: Set random seed for reproducibility (default: 42)
+- `--device cuda`: Select device for training (default: "cuda")
+- `--weighted_loss`: Enable class weighting in loss function
 
 ### Inference
 
@@ -59,27 +69,30 @@ python main.py inference --test_data_dir data/test --model_path ./results/best_m
 ```
 
 Options:
-- `--tta`: Enable Test-Time Augmentation
-- `--device cpu`: Use CPU instead of GPU
-- `--nodropout`: Should match training configuration
+- `--test_data_dir data/test`: Directory containing test images (default: "./data/test")
+- `--model_path`: Path to the trained model weights (required)
+- `--save_dir ./results`: Directory to save prediction results (default: "./results")
+- `--tta`: Enable Test-Time Augmentation for improved accuracy
+- `--batch_size 10`: Adjust batch size for inference (default: 10)
+- `--nodropout`: Disable dropout (should match training configuration)
+- `--device cuda`: Select device for inference (default: "cuda")
 
 ## Model Architecture
 
 The model enhances a ResNeXt101_32X8D backbone with a Squeeze-and-Excitation channel attention mechanism:
 
-1. The backbone processes the input image to extract features
-2. Global Average Pooling reduces spatial dimensions
-3. Channel attention recalibrates feature importance
-4. A classifier head with dropout produces the final prediction
+1. **Feature Extraction**: The ResNeXt101_32X8D backbone processes the input image (512×512 pixels) to extract 2048-channel feature maps
+2. **Global Average Pooling**: Reduces spatial dimensions to create channel descriptors
+3. **Channel Attention**: A Squeeze-and-Excitation module with reduction ratio 16 recalibrates feature importance
+4. **Classification Head**: A classifier with optional dropout (p=0.5) produces the final prediction across 100 classes
 
-## Key Improvements
-
-1. **Dataset-specific normalization**: Mean=[0.4575, 0.4705, 0.3730], Std=[0.1975, 0.1955, 0.2001]
-2. **Input size optimization**: 512×512 pixels for better detail preservation
-3. **CutMix augmentation**: Creates diverse training samples by combining images
-4. **Focal Loss**: Focuses on hard examples with label smoothing for better generalization
-5. **Channel attention**: Dynamically emphasizes important features
+The implementation uses mixed precision training for efficiency and includes early stopping to prevent overfitting.
 
 ## Performance snapshot
 
-![image](https://github.com/user-attachments/assets/8aedce01-a0e4-4bb8-8f16-66afcd5d184d)
+- Validation accuracy: 92.3%
+- Public test data accuracy: 96%
+- Parameters: 89.1M (within competition constraint of 100M)
+
+![image](https://github.com/user-attachments/assets/9b3865ff-0032-469e-8676-e21e3fb029fc)
+
