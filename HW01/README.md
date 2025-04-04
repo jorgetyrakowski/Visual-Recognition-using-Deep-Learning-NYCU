@@ -1,5 +1,3 @@
-I'll create a comprehensive README based on your code and requirements.
-
 # Enhanced ResNeXt with Channel Attention for 100-Class Image Classification
 
 ## NYCU Computer Vision 2025 Spring HW1
