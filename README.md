@@ -11,7 +11,7 @@ This repository contains my homework assignments and final project for the cours
 ## 📂 Contents
 
 - ✅ HW01 – [Image Classification Problem Competition]
-- ⏳ HW02 – *To be added*
+- ✅ HW02 – [Digit recognition using the Street View House Numbers (SVHN) dataset]
 - ⏳ HW03 – *To be added*
 - ⏳ HW04 – *To be added*
 - ⏳ Final Project – *To be added*
