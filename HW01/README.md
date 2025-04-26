@@ -8,6 +8,8 @@
 
 This project implements an enhanced image classification model for a 100-class classification challenge. The core approach uses ResNeXt101_32X8D as a backbone with added channel attention mechanisms to improve feature representation and address class imbalance.
 
+![image](https://github.com/user-attachments/assets/f43eb41f-8ad0-4768-b93c-dce860df77b1)
+
 Key features:
 - Channel attention (Squeeze-and-Excitation) module 
 - Custom dataset-specific normalization values 
