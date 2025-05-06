@@ -11,7 +11,9 @@ Instance segmentation of cells presents several unique challenges:
 
 Our approach is based on the Cascade Mask R-CNN architecture with multiple refinement stages, which helps to distinguish individual cells in clusters and provides more accurate boundary delineation.
 
-![Example Predictions](https://i.imgur.com/7zBnV1z.png)
+![image](https://github.com/user-attachments/assets/ff430826-fe1a-4b64-bbff-12895d5d1458)
+![sample_7_iou_0 46](https://github.com/user-attachments/assets/4a78d191-cec6-4c67-9183-31611a7158a6)
+
 *Example of model predictions (right) versus ground truth (left)*
 
 ## Features
@@ -152,7 +154,8 @@ Our enhanced Cascade Mask R-CNN model with ResNet101 backbone achieves the follo
 | Mask R-CNN (Baseline) | 0.340 | 0.523 | 0.412 |
 | Cascade Mask R-CNN (Ours) | 0.490 | 0.684 | 0.552 |
 
-![Per-class Performance](https://i.imgur.com/nKx9j0i.png)
+![class_performance_metrics](https://github.com/user-attachments/assets/e2505a14-3d6d-4284-bf52-71b0a023d8ce)
+
 *Performance metrics by cell class*
 
 Performance varies considerably across cell types, with class3 and class4 achieving F1 scores of 0.844 and 0.800 respectively, while class1 and class2 prove more challenging with F1 scores of 0.526 and 0.646.
@@ -193,4 +196,7 @@ The implementation is based on PyTorch and torchvision's Mask R-CNN implementati
 4. F. Milletari, N. Navab, and S.-A. Ahmadi, "V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation," in Fourth International Conference on 3D Vision (3DV), 2016.
 
 ## Performance Snapshot
+
+![Screenshot from 2025-05-06 17-25-37](https://github.com/user-attachments/assets/f843f0ea-5541-4fd7-8ae5-056571d3f881)
+
 
