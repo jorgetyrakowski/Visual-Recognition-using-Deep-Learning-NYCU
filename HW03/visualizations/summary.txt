@@ -1,0 +1,34 @@
+CELL SEGMENTATION MODEL PERFORMANCE SUMMARY
+==========================================
+
+Average Precision: 0.797
+Average Recall: 0.678
+Average F1 Score: 0.704
+Average IoU: 0.462
+
+PER-CLASS PERFORMANCE
+---------------------
+class1:
+  Precision: 0.763
+  Recall: 0.401
+  F1 Score: 0.526
+  Average IoU: 0.305
+
+class2:
+  Precision: 0.919
+  Recall: 0.498
+  F1 Score: 0.646
+  Average IoU: 0.337
+
+class3:
+  Precision: 0.767
+  Recall: 0.939
+  F1 Score: 0.844
+  Average IoU: 0.615
+
+class4:
+  Precision: 0.737
+  Recall: 0.875
+  F1 Score: 0.800
+  Average IoU: 0.590
+
