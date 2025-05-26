@@ -6,6 +6,19 @@ This repository contains the code for a comprehensive pipeline to address the Gl
 
 This pipeline achieved a private leaderboard score of **0.6873** and a public score of **0.7691**.
 
+## Methodology Overview
+
+The core of this project is a multi-stage pipeline designed to maximize wheat head detection accuracy:
+
+1.  **Base Model Training (YOLOv11x K-Fold)**: Five YOLOv11x models were trained using 5-fold cross-validation, starting from COCO pre-trained `yolov11x.pt` weights. This provides a robust set of diverse models.
+2.  **Pseudo-Label Generation**: An ensemble of these five YOLOv11x fold models, enhanced with Test-Time Augmentation (TTA) and Weighted Boxes Fusion (WBF), was used to generate high-confidence pseudo-labels from the unlabeled test set. The WBF parameters were adopted from successful public solutions, and the final score threshold for selecting pseudo-labels was optimized using an Out-of-Fold (OOF) strategy.
+3.  **Final Model Re-training (YOLOv11x with Pseudo-Labels)**: A single YOLOv11x model was then re-trained (fine-tuned), again starting from COCO pre-trained `yolov11x.pt` weights. This re-training used a combined dataset consisting of the original ground truth training data and the high-quality pseudo-labels generated in the previous step.
+4.  **Inference**: For generating the final submission, this re-trained YOLOv11x model was used. Predictions were made using a comprehensive TTA strategy. The resulting TTA predictions for each image were then fused using WBF (with the same fixed parameters as in pseudo-label generation), and the OOF-optimized score threshold was applied to filter the final detections.
+
+This systematic approach leverages the strengths of the YOLOv11x architecture, ensemble methods, semi-supervised learning (pseudo-labeling), and advanced inference techniques.
+
+![image](https://github.com/user-attachments/assets/88513c07-e067-4db6-9b16-1a7a51020f20)
+
 ## Project Structure
 
 ```
