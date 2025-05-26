@@ -1,7 +1,8 @@
 # Global Wheat Detection - YOLOv11x Pipeline 
 
-StudentID: 111550196
-Name: 狄豪飛 Jorge Tyrakowski
+## NYCU Computer Vision 2025 Spring Final
+**StudentID:** 111550196  
+**Name:** 狄豪飛 Jorge Tyrakowski
 
 This repository contains the code for a comprehensive pipeline to address the Global Wheat Detection challenge, utilizing the YOLOv11x architecture and advanced techniques such as K-Fold cross-validation, Out-of-Fold (OOF) parameter optimization, pseudo-labeling, Test-Time Augmentation (TTA), and Weighted Boxes Fusion (WBF).
 
