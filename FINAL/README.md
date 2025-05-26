@@ -1,6 +1,6 @@
 # Global Wheat Detection - YOLOv11x Pipeline 
 
-This repository contains the code for a comprehensive pipeline to address the Global Wheat Detection challenge, utilizing the YOLOv11m architecture and advanced techniques such as K-Fold cross-validation, Out-of-Fold (OOF) parameter optimization, pseudo-labeling, Test-Time Augmentation (TTA), and Weighted Boxes Fusion (WBF).
+This repository contains the code for a comprehensive pipeline to address the Global Wheat Detection challenge, utilizing the YOLOv11x architecture and advanced techniques such as K-Fold cross-validation, Out-of-Fold (OOF) parameter optimization, pseudo-labeling, Test-Time Augmentation (TTA), and Weighted Boxes Fusion (WBF).
 
 ![image](https://github.com/user-attachments/assets/bfe5c284-740d-4a0b-a4b7-ba48fbacec2f)
 
