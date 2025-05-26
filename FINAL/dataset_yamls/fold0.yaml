@@ -1,0 +1,6 @@
+names:
+- wheat
+nc: 1
+path: .
+train: lists/train_fold0.txt
+val: lists/val_fold0.txt
