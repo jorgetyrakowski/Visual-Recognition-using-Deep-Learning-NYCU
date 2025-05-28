@@ -1,7 +1,6 @@
-# NYCU Computer Vision 2025 Spring HW2
-
-**StudentID**:  111550196
-**Name**: Jorge Tyrakowski 狄豪飛 
+## NYCU Visual Recognition using Deep Learning 2025 HW1
+**StudentID:** 111550196  
+**Name:** 狄豪飛 Jorge Tyrakowski
 
 ## Introduction
 
