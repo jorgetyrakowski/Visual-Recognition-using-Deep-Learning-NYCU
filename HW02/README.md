@@ -1,7 +1,7 @@
 # NYCU Computer Vision 2025 Spring HW2
 
-**StudentID**: 狄豪飛  
-**Name**: Jorge Tyrakowski
+**StudentID**:  111550196
+**Name**: Jorge Tyrakowski 狄豪飛 
 
 ## Introduction
 
