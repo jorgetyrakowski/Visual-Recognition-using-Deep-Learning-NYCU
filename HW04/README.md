@@ -1,8 +1,8 @@
 # Enhanced Image Restoration with PromptIR-V4
 
 ## NYCU Computer Vision 2025 Spring HW4
-**StudentID:** YOUR_STUDENT_ID_HERE 
-**Name:** YOUR_NAME_HERE
+**StudentID:** 111550196
+**Name:** 狄豪飛 Jorge Tyrakowski
 
 ## Introduction
 This project presents PromptIR-V4, an advanced model for image restoration, specifically targeting the removal of degradation effects like rain and snow. The model builds upon the principles of PromptIR, incorporating a U-Net architecture with Transformer blocks and a novel dynamic spatial prompting mechanism (V4) to adaptively process image features. This work aims to achieve state-of-the-art performance in restoring clean images from degraded inputs.
