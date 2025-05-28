@@ -1,5 +1,9 @@
 # Cell Instance Segmentation
 
+## NYCU Visual Recognition using Deep Learning 2025 HW1
+**StudentID:** 111550196  
+**Name:** 狄豪飛 Jorge Tyrakowski
+
 ## Introduction
 
 This repository contains a deep learning solution for cell instance segmentation in biomedical images. The goal is to develop a model that can accurately identify and segmentate individual cell instances across four different cell classes (class1, class2, class3, class4) in microscopy images.
