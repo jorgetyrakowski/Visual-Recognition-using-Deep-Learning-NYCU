@@ -7,6 +7,8 @@
 ## Introduction
 This project presents PromptIR-V4, an advanced model for image restoration, specifically targeting the removal of degradation effects like rain and snow. The model builds upon the principles of PromptIR, incorporating a U-Net architecture with Transformer blocks and a novel dynamic spatial prompting mechanism (V4) to adaptively process image features. This work aims to achieve state-of-the-art performance in restoring clean images from degraded inputs.
 
+![image](https://github.com/user-attachments/assets/560afd6e-0feb-4cae-8a93-0d065e380cb8)
+
 This repository contains the source code for the PromptIR-V4 model, training and prediction scripts, and utilities for dataset handling and metric calculation.
 
 ## How to Install
@@ -89,22 +91,17 @@ The PromptIR-V4 model is a U-Net based architecture enhanced with Transformer bl
 
 This design allows the model to learn and apply context-specific restoration strategies.
 
-## Results
-*(This section is a placeholder. Please add your quantitative results (e.g., PSNR scores on validation/test sets) and qualitative visual results (images/collages) here.)*
-
-**Quantitative Results:**
--   Best Validation PSNR achieved: (e.g., 30.26 dB on average for V4)
--   (Add any other metrics or comparisons)
-
 **Visualizations:**
-*(You can embed images using Markdown, e.g., `![Training Curves](plot_val_psnr_v4.png)`)*
+
+![Uploading collage_val.png…]()
+![comparition](https://github.com/user-attachments/assets/5f546fe7-e1b8-43e1-971e-630d1a5a2a21)
+
 
 **Training Curves:**
--   Validation PSNR vs. Epoch
--   Training Loss Components vs. Epoch
 
-**Qualitative Examples (Test Set):**
--   Collage of (Input | Predicted Output) for selected test images.
+![plot_val_psnr_v4](https://github.com/user-attachments/assets/3903df0f-94d7-4e65-a84a-f5c162a7ba97)
+![plot_train_losses_v4](https://github.com/user-attachments/assets/03b05926-cf3f-443f-b55d-0a69b4c35dbf)
 
-**Qualitative Examples (Epoch Comparison):**
--   Collage showing model output refinement across different training epochs for selected validation images.
+## Performance Snapshot
+![Screenshot from 2025-05-28 18-51-24](https://github.com/user-attachments/assets/056ae35a-e3f0-431f-9ca5-5ba122e15bff)
+
