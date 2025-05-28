@@ -1,6 +1,6 @@
 # Enhanced ResNeXt with Channel Attention for 100-Class Image Classification
 
-## NYCU Computer Vision 2025 Spring HW1
+## NYCU Visual Recognition using Deep Learning 2025 HW1
 **StudentID:** 111550196  
 **Name:** 狄豪飛 Jorge Tyrakowski
 
