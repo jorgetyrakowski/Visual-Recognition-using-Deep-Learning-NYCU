@@ -1,4 +1,4 @@
-## NYCU Visual Recognition using Deep Learning 2025 HW1
+## NYCU Visual Recognition using Deep Learning 2025 HW2
 **StudentID:** 111550196  
 **Name:** 狄豪飛 Jorge Tyrakowski
 
@@ -158,5 +158,6 @@ Both models exceed the competition baselines (0.35 for Task 1 and 0.70 for Task 
 ## Performance Snapshot
 
 ![image](https://github.com/user-attachments/assets/b879b989-52f3-4f0d-a86a-e57d6ecbc29f)
+
 
 
