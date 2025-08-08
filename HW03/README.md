@@ -1,6 +1,6 @@
 # Cell Instance Segmentation
 
-## NYCU Visual Recognition using Deep Learning 2025 HW1
+## NYCU Visual Recognition using Deep Learning 2025 HW3
 **StudentID:** 111550196  
 **Name:** 狄豪飛 Jorge Tyrakowski
 
