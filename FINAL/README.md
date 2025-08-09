@@ -126,5 +126,3 @@ These can be installed in a Kaggle Notebook environment using the pip install co
 *   `pseudo_labeled_data/`: Directory with the combined training data (GT + PLs) and `dataset_pl.yaml`.
 *   `runs/detect/pseudo_labeled_wheat_model/weights/best.pt`: The final model trained with pseudo-labels.
 *   `submission.csv`: The final submission file for the Kaggle competition.
-
-This modular structure allows for easier debugging and understanding of each pipeline stage.
