@@ -1,6 +1,6 @@
 # Enhanced Image Restoration with PromptIR-V4
 
-## NYCU Visual Recognition using Deep Learning 2025 HW1
+## NYCU Visual Recognition using Deep Learning 2025 HW4
 **StudentID:** 111550196  
 **Name:** 狄豪飛 Jorge Tyrakowski
 
